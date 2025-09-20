@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vault Breach LLC</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .sticky-nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      backdrop-filter: blur(8px);
+      z-index: 50;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- HEADER -->
+  <header id="navbar" class="w-full bg-white shadow-sm transition-all">
+    <div class="max-w-7xl mx-auto flex justify-between items-center py-4 px-6">
+      <div class="text-xl font-bold">Vault Breach</div>
+      <nav class="hidden md:flex space-x-6">
+        <a href="#" class="hover:text-blue-600">Home</a>
+        <a href="#" class="hover:text-blue-600">Services</a>
+        <a href="#" class="hover:text-blue-600">Blog</a>
+        <a href="#" class="hover:text-blue-600">About</a>
+        <a href="#" class="hover:text-blue-600">Contact</a>
+      </nav>
+      <a href="#" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">Get Started</a>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="relative bg-gray-900 text-white">
+    <div class="max-w-7xl mx-auto px-6 py-24 text-center">
+      <h1 class="text-4xl md:text-5xl font-bold">Secure Your Business. Stay Compliant.</h1>
+      <p class="mt-4 text-lg">CMMC | FedRAMP | ISO | NIST Compliance Made Easy</p>
+      <a href="#" class="mt-6 inline-block bg-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-blue-700">Get Started</a>
+    </div>
+  </section>
+
+  <!-- OFFERING CARDS -->
+  <section class="max-w-7xl mx-auto px-6 py-12 grid md:grid-cols-3 gap-6">
+    <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg">
+      <h3 class="font-semibold text-lg mb-2">Cybersecurity Audits</h3>
+      <p class="text-sm text-gray-600">Identify and fix vulnerabilities before attackers exploit them.</p>
+    </div>
+    <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg">
+      <h3 class="font-semibold text-lg mb-2">Compliance Roadmaps</h3>
+      <p class="text-sm text-gray-600">Step-by-step guides to meet regulatory requirements.</p>
+    </div>
+    <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg">
+      <h3 class="font-semibold text-lg mb-2">Training & Awareness</h3>
+      <p class="text-sm text-gray-600">Empower your team with security best practices.</p>
+    </div>
+  </section>
+
+  <!-- DETAILED OFFERING SECTIONS -->
+  <section class="bg-white py-16">
+    <div class="max-w-7xl mx-auto px-6 space-y-12">
+      <div class="grid md:grid-cols-2 gap-8 items-center">
+        <img src="https://via.placeholder.com/500" alt="Service" class="rounded-2xl shadow">
+        <div>
+          <h2 class="text-3xl font-bold mb-4">Cybersecurity Audit</h2>
+          <p class="text-gray-600 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum non felis ut ipsum sagittis blandit.</p>
+          <a href="#" class="bg-blue-600 text-white px-5 py-3 rounded-lg hover:bg-blue-700">Learn More</a>
+        </div>
+      </div>
+      <div class="grid md:grid-cols-2 gap-8 items-center">
+        <div>
+          <h2 class="text-3xl font-bold mb-4">Compliance Roadmap</h2>
+          <p class="text-gray-600 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum non felis ut ipsum sagittis blandit.</p>
+          <a href="#" class="bg-blue-600 text-white px-5 py-3 rounded-lg hover:bg-blue-700">Learn More</a>
+        </div>
+        <img src="https://via.placeholder.com/500" alt="Service" class="rounded-2xl shadow">
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE US -->
+  <section class="bg-gray-100 py-16 text-center">
+    <h2 class="text-3xl font-bold mb-6">Why Choose Vault Breach?</h2>
+    <p class="max-w-3xl mx-auto text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae commodo eros.</p>
+  </section>
+
+  <!-- CONTACT CTA -->
+  <section class="bg-blue-600 text-white py-12 text-center">
+    <h2 class="text-3xl font-bold mb-4">Ready to Secure Your Business?</h2>
+    <a href="#" class="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-200">Get in Touch</a>
+  </section>
+
+  <script>
+    // Sticky Navbar on Scroll
+    const navbar = document.getElementById("navbar");
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 50) {
+        navbar.classList.add("sticky-nav", "shadow-md");
+      } else {
+        navbar.classList.remove("sticky-nav", "shadow-md");
+      }
+    });
+  </script>
+</body>
+</html>
